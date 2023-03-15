@@ -4,7 +4,7 @@ const lodash = require("lodash");
 const { parse } = require("csv-parse");
 const fs = require("fs");
 
-function axiosValidator(params) {
+function axiosValidator() {
   axios
     .get("https://jsonplaceholder.typicode.com/users")
     .then(function (response) {
@@ -55,6 +55,8 @@ function habitablePlanets() {
     });
 }
 
+axiosValidator();
+lodashUse();
 habitablePlanets();
 
 
